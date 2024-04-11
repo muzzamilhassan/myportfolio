@@ -17,7 +17,7 @@ const Contact = () => {
       <div className='Contact-sec'>
         <div className="subContact">
           <section className="sect1 p-4">
-            <h1 className='py-3 text-2xl font-bold'>DON'T BE SHY !</h1>
+            <h1 className='py-3 text-2xl font-bold'>DON&apos;T BE SHY !</h1>
             <p className='leading-5 font-light'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
             <div className='flex py-3'>
               <TbMailOpenedFilled />

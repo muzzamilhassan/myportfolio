@@ -25,7 +25,7 @@ const Homee = () => {
             }}>
               <div className='flex'>
                 <span className='line mt-3 mr-3'></span>
-                <h1 className='text-5xl font-bold leading-14'><span className='text-yellow text-nowrap'>I'M MUZZAMIL</span><br />
+                <h1 className='text-5xl font-bold leading-14'><span className='text-yellow text-nowrap'>I&apos;M MUZZAMIL</span><br />
                   {/* WEB DESIGNER */}
                   <TypeAnimation
                     sequence={[
@@ -47,7 +47,7 @@ const Homee = () => {
                   />
                 </h1>
               </div>
-              <p className='py-10 leading-8'>I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
+              <p className='py-10 leading-8'>I&apos;m a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am passionate about building excellent software that improves the lives of those around me.</p>
               <div className='flex'>
                 <Btn title="MORE ABOUT ME" icon=<FaArrowRightFromBracket /> />
                 <Btn title="DOWNLOAD CV" icon=<RiDownloadFill /> />
