@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   font-family: "Raleway", sans-serif;
@@ -93,12 +92,62 @@ body {
   border-radius: 20px;
   color: #111111;
 }
+/* loading code start  */
+.loader {
+  --color: #FFB400;
+  --size: 30px;
+  width: var(--size);
+  height: var(--size);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+.centerdata{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.loader span {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color);
+  animation: keyframes-blink .5s alternate infinite linear;
+}
 
+.loader span:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 150ms;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 280ms;
+}
+
+@keyframes keyframes-blink {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5) rotate(20deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* loading code end */
 /* button codeing start */
 .Btn {
   width: 50px;
   height: 50px;
-  background-color: #222222;
+  background-color: #252525;
   border: none;
   border-radius: 50%;
   /* background: linear-gradient(-50deg,#ffb300,#ffc130,#f8ba2a); */
@@ -555,6 +604,171 @@ button.learn-more .circle svg {
   overflow: hidden;
   border-radius: 10px;
 }
-
-
 /* portfolio us coding end */
+/* Contact us coding start */
+.Contact-sec{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+}
+.Contact-sec .subContact{
+  padding: 0 120px;
+  width: 100%;
+  position: absolute;
+  /* left: 10%; */
+  top: 30%;
+  width: 100%;
+  display: flex;
+  
+}
+.Contact-sec .subContact .sect1{
+  width: 35%;
+}
+.Contact-sec .subContact .sect1 svg{
+  color: #FFB400;
+  font-size: 40px;
+  margin-right: 8px;
+}
+.Contact-sec .subContact .sect2{
+  width: 65%;
+}
+ /* contactbtn coding start  */
+ .ContactBtn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  /* overflow: hidden; */
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.svgContainer {
+  padding-left: 10px;
+  font-size: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #FFB400;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.ContactBtn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.ContactBtn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+ /* contactbtn coding end */
+
+@media screen and (max-width:768px ) {
+  .Contact-sec .subContact{
+    flex-direction: column;
+  }
+  .Contact-sec .subContact .sect1{
+    width: 100%;
+  }
+  .Contact-sec .subContact .sect2{
+    width: 100%;
+  }
+}
+/* form section conding start  */
+.input{
+  border: 1px solid #FFB400;
+}
+.SubmitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #FFB400;
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: black;
+}
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* hover effect on button width */
+.SubmitBtn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.SubmitBtn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.SubmitBtn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* button click effect*/
+.SubmitBtn:active {
+  transform: translate(2px ,2px);
+}
+/* form section conding end */
+/* Contact us coding end */

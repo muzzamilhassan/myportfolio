@@ -4,7 +4,7 @@ import { BsDownload } from "react-icons/bs";
 const Btn = (props) => {
     return (
         <div>
-            <button className="learn-more mr-2">
+            <button type='submit' className="learn-more mr-2">
                 <span className="circle" aria-hidden="true">
                     <span className="arrow">{props.icon}</span>
                 </span>
