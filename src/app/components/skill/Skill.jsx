@@ -19,7 +19,7 @@ const Skill = () => {
             </div> 
             <div className='skillbar'>
                 <CircularProgressbar value={55} text={`${55}%`} />
-                <h4 className='text-center pt-4 text-l'>TAILWINT</h4>
+                <h4 className='text-center pt-4 text-l'>TAILWIND</h4>
             </div> 
             <div className='skillbar'>
                 <CircularProgressbar value={60} text={`${60}%`} />
