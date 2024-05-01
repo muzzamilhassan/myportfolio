@@ -70,7 +70,7 @@ const About = () => {
           <h1 className='text-center text-2xl font-bold'>EXPERIENCE & EDUCATION</h1>
 
           <div className="experience">
-            <div><Experience year="2020" logo=<MdEmail/> title="WEB DEVELOPER" from="FREELANCER/LINKDIN/UPWORK"/></div>
+            <div><Experience year="2020" logo=<MdEmail/> title="WEB DEVELOPER" from="FREELANCER/LINKEDIN/UPWORK"/></div>
             <div><Experience year="2021" logo=<FaGraduationCap/>  title="ENGINEERING DEGREE" from="GOVERNMENT COLLOGE"/></div>
             <div><Experience year="2022" logo=<MdEmail/>  title="UI/UX DESIGNER" from="FREELANCER/LINKDIN/UPWORK"/></div>
             <div><Experience year="2023" logo=<FaGraduationCap/>  title="BACHELOR DEGREE " from="UNIVERSITY OF HARIPUR"/></div>
