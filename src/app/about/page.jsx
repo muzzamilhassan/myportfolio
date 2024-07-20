@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import Navbar from '../components/Navbar'
 import Btn from '../components/btn/Btn'
 import { RiDownloadFill } from "react-icons/ri";
@@ -38,10 +39,10 @@ const About = () => {
 
             </div>
 
-            <div className="btnn">
+            <Link href={"CV.pdf"} download={"CV.pdf"} className="btnn text-white">
 
               <Btn title="DOWNLOAD CV" icon=<RiDownloadFill /> />
-            </div>
+            </Link>
 
           </div>
           <div className='sec'>
