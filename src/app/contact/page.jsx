@@ -1,12 +1,11 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Title from '../components/title/Title'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Title from "../components/title/Title";
 import { TbMailOpenedFilled } from "react-icons/tb";
 import { FaSquarePhone } from "react-icons/fa6";
-import Contactbtn from '../components/contactBtn/Contactbtn';
-import Form from '../components/form/Form';
-
-
+import Contactbtn from "../components/contactBtn/Contactbtn";
+import Form from "../components/form/Form";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -14,36 +13,54 @@ const Contact = () => {
       <div>
         <Title bgname="CONTACT" name="GET IN" me="TOUCH" />
       </div>
-      <div className='Contact-sec'>
+      <div className="Contact-sec">
         <div className="subContact">
           <section className="sect1 p-4">
-            <h1 className='py-3 text-2xl font-bold'>DON&apos;T BE SHY !</h1>
-            <p className='leading-5 font-light'>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
-            <div className='flex py-3'>
+            <h1 className="py-3 text-2xl font-bold">DON&apos;T BE SHY !</h1>
+            <p className="leading-5 font-light">
+              Feel free to get in touch with me. I am always open to discussing
+              new projects, creative ideas or opportunities to be part of your
+              visions.
+            </p>
+            <div className="flex py-3">
               <TbMailOpenedFilled />
-              <h6><span className='text-[#b9b9b9] leading-6'>MAIL ME</span> <br />muzzamilhassan302@gmail.com</h6>
+              <h6>
+                <span className="text-[#b9b9b9] leading-6">MAIL ME</span> <br />
+                muzzamilhassan302@gmail.com
+              </h6>
             </div>
-            <div className='flex pb-3'>
+            <div className="flex pb-3">
               <FaSquarePhone />
-              <h6><span className='text-[#b9b9b9] leading-6'>CALL ME</span> <br />+92-305-5779207</h6>
+              <h6>
+                <span className="text-[#b9b9b9] leading-6">CALL ME</span> <br />
+                +92-305-5779207
+              </h6>
             </div>
-            <div className='flex gap-5 py-4'>
+            <div className="flex gap-5 py-4">
+              <Link href={"https://wa.me/+923055779207"} target="_black">
               <Contactbtn path="M 224 122.8 c -72.7 0 -131.8 59.1 -131.9 131.8 c 0 24.9 7 49.2 20.2 70.1 l 3.1 5 l -13.3 48.6 l 49.9 -13.1 l 4.8 2.9 c 20.2 12 43.4 18.4 67.1 18.4 h 0.1 c 72.6 0 133.3 -59.1 133.3 -131.8 c 0 -35.2 -15.2 -68.3 -40.1 -93.2 c -25 -25 -58 -38.7 -93.2 -38.7 Z m 77.5 188.4 c -3.3 9.3 -19.1 17.7 -26.7 18.8 c -12.6 1.9 -22.4 0.9 -47.5 -9.9 c -39.7 -17.2 -65.7 -57.2 -67.7 -59.8 c -2 -2.6 -16.2 -21.5 -16.2 -41 s 10.2 -29.1 13.9 -33.1 c 3.6 -4 7.9 -5 10.6 -5 c 2.6 0 5.3 0 7.6 0.1 c 2.4 0.1 5.7 -0.9 8.9 6.8 c 3.3 7.9 11.2 27.4 12.2 29.4 s 1.7 4.3 0.3 6.9 c -7.6 15.2 -15.7 14.6 -11.6 21.6 c 15.3 26.3 30.6 35.4 53.9 47.1 c 4 2 6.3 1.7 8.6 -1 c 2.3 -2.6 9.9 -11.6 12.5 -15.5 c 2.6 -4 5.3 -3.3 8.9 -2 c 3.6 1.3 23.1 10.9 27.1 12.9 s 6.6 3 7.6 4.6 c 0.9 1.9 0.9 9.9 -2.4 19.1 Z M 400 32 H 48 C 21.5 32 0 53.5 0 80 v 352 c 0 26.5 21.5 48 48 48 h 352 c 26.5 0 48 -21.5 48 -48 V 80 c 0 -26.5 -21.5 -48 -48 -48 Z M 223.9 413.2 c -26.6 0 -52.7 -6.7 -75.8 -19.3 L 64 416 l 22.5 -82.2 c -13.9 -24 -21.2 -51.3 -21.2 -79.3 C 65.4 167.1 136.5 96 223.9 96 c 42.4 0 82.2 16.5 112.2 46.5 c 29.9 30 47.9 69.8 47.9 112.2 c 0 87.4 -72.7 158.5 -160.1 158.5 Z" />
+              </Link>
+              <Link href={"https://www.facebook.com/muzzamil.hassan.758"} target="_black">
               <Contactbtn path="M 400 32 H 48 A 48 48 0 0 0 0 80 v 352 a 48 48 0 0 0 48 48 h 137.25 V 327.69 h -63 V 256 h 63 v -54.64 c 0 -62.15 37 -96.48 93.67 -96.48 c 27.14 0 55.52 4.84 55.52 4.84 v 61 h -31.27 c -30.81 0 -40.42 19.12 -40.42 38.73 V 256 h 68.78 l -11 71.69 h -57.78 V 480 H 400 a 48 48 0 0 0 48 -48 V 80 a 48 48 0 0 0 -48 -48 Z" />
+              </Link>
+              <Link href={"https://x.com/m83238_e"} target="_black">
               <Contactbtn path="M 459.37 151.716 c 0.325 4.548 0.325 9.097 0.325 13.645 c 0 138.72 -105.583 298.558 -298.558 298.558 c -59.452 0 -114.68 -17.219 -161.137 -47.106 c 8.447 0.974 16.568 1.299 25.34 1.299 c 49.055 0 94.213 -16.568 130.274 -44.832 c -46.132 -0.975 -84.792 -31.188 -98.112 -72.772 c 6.498 0.974 12.995 1.624 19.818 1.624 c 9.421 0 18.843 -1.3 27.614 -3.573 c -48.081 -9.747 -84.143 -51.98 -84.143 -102.985 v -1.299 c 13.969 7.797 30.214 12.67 47.431 13.319 c -28.264 -18.843 -46.781 -51.005 -46.781 -87.391 c 0 -19.492 5.197 -37.36 14.294 -52.954 c 51.655 63.675 129.3 105.258 216.365 109.807 c -1.624 -7.797 -2.599 -15.918 -2.599 -24.04 c 0 -57.828 46.782 -104.934 104.934 -104.934 c 30.213 0 57.502 12.67 76.67 33.137 c 23.715 -4.548 46.456 -13.32 66.599 -25.34 c -7.798 24.366 -24.366 44.833 -46.132 57.827 c 21.117 -2.273 41.584 -8.122 60.426 -16.243 c -14.292 20.791 -32.161 39.308 -52.628 54.253 Z" />
+              </Link>
+              <Link href={"https://www.instagram.com/muzzamilhassa348/"} target="_black">
               <Contactbtn path="M 224 202.66 A 53.34 53.34 0 1 0 277.36 256 A 53.38 53.38 0 0 0 224 202.66 Z m 124.71 -41 a 54 54 0 0 0 -30.41 -30.41 c -21 -8.29 -71 -6.43 -94.3 -6.43 s -73.25 -1.93 -94.31 6.43 a 54 54 0 0 0 -30.41 30.41 c -8.28 21 -6.43 71.05 -6.43 94.33 S 91 329.26 99.32 350.33 a 54 54 0 0 0 30.41 30.41 c 21 8.29 71 6.43 94.31 6.43 s 73.24 1.93 94.3 -6.43 a 54 54 0 0 0 30.41 -30.41 c 8.35 -21 6.43 -71.05 6.43 -94.33 S 357.1 182.74 348.75 161.67 Z M 224 338 a 82 82 0 1 1 82 -82 A 81.9 81.9 0 0 1 224 338 Z m 85.38 -148.3 a 19.14 19.14 0 1 1 19.13 -19.14 A 19.1 19.1 0 0 1 309.42 189.74 Z M 400 32 H 48 A 48 48 0 0 0 0 80 V 432 a 48 48 0 0 0 48 48 H 400 a 48 48 0 0 0 48 -48 V 80 A 48 48 0 0 0 400 32 Z M 382.88 322 c -1.29 25.63 -7.14 48.34 -25.85 67 s -41.4 24.63 -67 25.85 c -26.41 1.49 -105.59 1.49 -132 0 c -25.63 -1.29 -48.26 -7.15 -67 -25.85 s -24.63 -41.42 -25.85 -67 c -1.49 -26.42 -1.49 -105.61 0 -132 c 1.29 -25.63 7.07 -48.34 25.85 -67 s 41.47 -24.56 67 -25.78 c 26.41 -1.49 105.59 -1.49 132 0 c 25.63 1.29 48.33 7.15 67 25.85 s 24.63 41.42 25.85 67.05 C 384.37 216.44 384.37 295.56 382.88 322 Z" />
-
+              </Link>
             </div>
           </section>
           <section className="sect2">
-            <Form/>
+            <Form />
           </section>
-
         </div>
       </div>
-      <div><Navbar /></div>
+      <div>
+        <Navbar />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
