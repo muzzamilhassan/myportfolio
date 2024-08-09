@@ -15,7 +15,7 @@ const Portfolio = () => {
           <div className="hoverr">
           <div>
             <h5></h5>
-            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-white hover:text-white'><FaLink/>Headphone-Store</Link>
+            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-white hover:text-white' target='_blank'><FaLink/>Headphone-Store</Link>
           </div>
 
           </div>
