@@ -13,9 +13,10 @@ const Portfolio = () => {
         <div className='subPortfolio'>
           <img src="./project-1.jpg" alt="" />
           <div className="hoverr">
-          <div>
-            <h5></h5>
-            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-xl text-white hover:text-white flex' target='_blank'><FaLink className='text-2xl'/>Headphone-Store</Link>
+          <div className='space-y-2'>
+            
+            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-xl text-white hover:text-white flex space-x-2' target='_blank'><FaLink className='text-2xl mr-2'/>Headphone-Store</Link>
+            <h1 className='selection:bg-black'>muzzamilhassan302@gmail.com</h1>
           </div>
 
           </div>
