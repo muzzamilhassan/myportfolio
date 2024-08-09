@@ -2,6 +2,8 @@ import React from 'react'
 import Title from '../components/title/Title'
 import Navbar from '../components/Navbar'
 import Link from 'next/link'
+import { FaLink } from "react-icons/fa";
+
 // import porject1 from './project-1.jpg'
 const Portfolio = () => {
   return (
@@ -13,7 +15,7 @@ const Portfolio = () => {
           <div className="hoverr">
           <div>
             <h5></h5>
-            <Link href={'https://headphone-store-muzzi.netlify.app/'}>Headphone-Store</Link>
+            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-white hover:text-white'><FaLink/>Headphone-Store</Link>
           </div>
 
           </div>
