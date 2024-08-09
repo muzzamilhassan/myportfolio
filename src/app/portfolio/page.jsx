@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../components/title/Title'
 import Navbar from '../components/Navbar'
+import Link from 'next/link'
 // import porject1 from './project-1.jpg'
 const Portfolio = () => {
   return (
@@ -10,7 +11,10 @@ const Portfolio = () => {
         <div className='subPortfolio'>
           <img src="./project-1.jpg" alt="" />
           <div className="hoverr">
-          <h5>muzzamilhassan302@gmail.com</h5>
+          <div>
+            <h5></h5>
+            <Link href={'https://headphone-store-muzzi.netlify.app/'}>Headphone-Store</Link>
+          </div>
 
           </div>
         </div>
