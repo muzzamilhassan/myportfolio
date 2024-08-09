@@ -11,20 +11,24 @@ const Portfolio = () => {
       <Title bgname="WORKS" name="MY" me="PORTFOLIO" />
       <div className="portfolio">
         <div className='subPortfolio'>
-          <img src="./project-1.jpg" alt="" />
+          <img src="./project-2.png" alt="" className='w-full h-full'/>
           <div className="hoverr">
           <div className='space-y-2'>
             
-            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-xl text-white hover:text-white flex space-x-2' target='_blank'><FaLink className='text-2xl mr-2'/>Headphone-Store</Link>
+            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-xl text-white hover:text-white flex space-x-2 px-6' target='_blank'><FaLink className='text-2xl mr-2'/>Travels & Tours</Link>
             <h1 className='selection:bg-black'>muzzamilhassan302@gmail.com</h1>
           </div>
 
           </div>
         </div>
         <div className='subPortfolio'>
-          <img src="./project-2.jpg" alt="" />
+          <img src="./project-1.png" alt="" className='w-full h-full'/>
           <div className="hoverr">
-          <h5>muzzamilhassan302@gmail.com</h5>
+          <div className='space-y-2'>
+            
+            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-xl text-white hover:text-white flex space-x-2' target='_blank'><FaLink className='text-2xl mr-2'/>Headphone-Store</Link>
+            <h1 className='selection:bg-black'>muzzamilhassan302@gmail.com</h1>
+          </div>
 
           </div>
         </div>
