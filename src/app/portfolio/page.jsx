@@ -15,7 +15,7 @@ const Portfolio = () => {
           <div className="hoverr">
           <div className='space-y-2'>
             
-            <Link href={'https://headphone-store-muzzi.netlify.app/'} className='text-xl text-white hover:text-white flex space-x-2 px-6' target='_blank'><FaLink className='text-2xl mr-2'/>Travels & Tours</Link>
+            <Link href={'https://travelandtours12.netlify.app/'} className='text-xl text-white hover:text-white flex space-x-2 px-6' target='_blank'><FaLink className='text-2xl mr-2'/>Travels & Tours</Link>
             <h1 className='selection:bg-black'>muzzamilhassan302@gmail.com</h1>
           </div>
 
