@@ -1,23 +1,20 @@
-"use client";
-import React, { useState } from "react";
-// import Button from '../components/button/Button'
+'use client'
 import Btn from "../components/btn/Btn";
 import { RiDownloadFill } from "react-icons/ri";
-
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import Navbar from "../components/Navbar";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 
 const Homee = () => {
-  // const [active,setActive]=useState(0)
+  
   return (
     <div className="homepage">
       <div className="container-fluid">
-        <div className="row items-center">
+        <div className="row items-center w-full h-screen">
           <div className="col-md-4 ml-1">
-            <div className="imageWrap">
-              <img src="2.jpg" alt="image missing" />
+            <div className="imageWrap bg-black">
+              <img src="/img.png" alt="image missing" className="w-full px-4 opacity-90"/>
             </div>
           </div>
           <div className="col-md-6 w-full flex ml-20">
@@ -33,12 +30,12 @@ const Homee = () => {
                     I&apos;M MUZZAMIL
                   </span>
                   <br />
-                  {/* WEB DESIGNER */}
+                 
                   <TypeAnimation
                     sequence={[
-                      // Same substring at the start will only be typed out once, initially
+                     
                       "Designer",
-                      1000, // wait 1s before replacing "Mice" with "Hamsters"
+                      1000, 
                       "React Developer",
                       1000,
                       "Freelancer",
@@ -48,7 +45,7 @@ const Homee = () => {
                     ]}
                     wrapper="span"
                     speed={150}
-                    // deletionSpeed={150}
+                
                     style={{ fontSize: "1.1em", display: "inline-block" }}
                     repeat={Infinity}
                   />
