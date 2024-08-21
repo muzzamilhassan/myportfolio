@@ -58,7 +58,9 @@ const Homee = () => {
                 lives of those around me.
               </p>
               <div className="flex">
+                <Link href='/about'>
                 <Btn title="MORE ABOUT ME"  icon= <FaArrowRightFromBracket className="text-white"/>/>
+                </Link>
                 <Link href="CV.pdf" download="CV.pdf">
                   <Btn title="DOWNLOAD CV" icon= <RiDownloadFill className="text-white"/> />
                 </Link>
