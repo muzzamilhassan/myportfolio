@@ -12,9 +12,9 @@ const Homee = () => {
     <div className="homepage">
       <div className="container-fluid">
         <div className="row items-center w-full h-screen">
-          <div className="col-md-4 ml-1">
-            <div className="imageWrap bg-black">
-              <img src="/img.png" alt="image missing" className="w-full px-4 opacity-90"/>
+          <div className="col-md-4 ml-1 mb-16">
+            <div className="imageWrap ">
+              <img src="/logo.jpg" alt="image missing" className="w-full !mb-4 "/>
             </div>
           </div>
           <div className="col-md-6 w-full flex ml-20">
@@ -46,7 +46,7 @@ const Homee = () => {
                     wrapper="span"
                     speed={150}
                 
-                    style={{ fontSize: "1.1em", display: "inline-block" }}
+                    style={{ fontSize: "1.0em", display: "inline-block" }}
                     repeat={Infinity}
                   />
                 </h1>
